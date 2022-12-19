@@ -29,5 +29,8 @@ contract SplitPay {
 
         emit PaymentRecieved(msg.sender, msg.value);
     }
+    /* function checkPayees() public view returns(address[]){
+        return payees;
+    }*/
 
 }
