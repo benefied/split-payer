@@ -17,6 +17,7 @@ contract SplitPay {
         for(uint i; i < _payees.length; i++) {
             payees.push(_payees[i]);
         }
+       emit PayeeAdded(_payees[i], 100 / payees.length)
     }
   
   //fuction to pay into contract and it splits it immediately
