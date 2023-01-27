@@ -4,3 +4,4 @@ The aim of this contract was to create a consensus payment system so that when w
 Security measures will be taken this week
 
 for the frontend it would be designed like a wallet which and also the solidity code will record past transactions to display in the frontend
+Since Im learning reactjs ill implement reactjs to the frontend to give flexibility
