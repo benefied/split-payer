@@ -2,8 +2,6 @@
 
 pragma solidity ^0.8.10;
 
-// import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
-
 contract SplitPay {
     event PaymentReleased(address indexed to, uint amount);
     event PaymentRecieved(address _from, uint _amount);
