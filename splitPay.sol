@@ -8,7 +8,13 @@ contract SplitPay {
     event PayeeAdded(address account, uint shares);
 
   //an array for the address for the address that are paying eth
+  Struct Payee{
     address payable [] public payees;
+    string public name;
+  }
+  
+    Payee[] public payees;
+    
 
   //the constructor to add payees
     constructor(address payable [] memory _payees) {
