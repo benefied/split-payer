@@ -9,17 +9,19 @@ contract SplitPay {
 
   //an array for the address for the address that are paying eth
   Struct Payee{
-    address payable [] public payees;
+    address payable [] public payer;
     string public name;
   }
   
     Payee[] public payees;
-    
+    unit private payers;
 
   //the constructor to add payees
-    constructor(address payable [] memory _payees) {
-        for(uint i; i < _payees.length; i++) {
-            payees.push(_payees[i]);
+    constructor(address payable [] memory _payer, string memory _) {
+        for(uint i; i < payers.length; i++) {
+            payees(Payee.push({
+                
+            ));
         }
        emit PayeeAdded(_payees[i], 100 / payees.length)
     }
