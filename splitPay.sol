@@ -17,10 +17,11 @@ contract SplitPay {
     unit private payers;
 
   //the constructor to add payees
-    constructor(address payable [] memory _payer, string memory _) {
+    constructor(address payable [] memory _payer, string memory _name) {
         for(uint i; i < payers.length; i++) {
             payees(Payee.push({
-                
+                _payer: payer,
+                _name: name
             ));
         }
        emit PayeeAdded(_payees[i], 100 / payees.length)
